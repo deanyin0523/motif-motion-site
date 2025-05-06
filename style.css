@@ -1,55 +1,80 @@
-body {
-  font-family: Arial, sans-serif;
+/* Base Reset */
+* {
   margin: 0;
-  line-height: 1.6;
-  background: #fff;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0 20px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
-  color: #fff;
-  padding: 1rem 2rem;
+  padding: 20px 0;
+  border-bottom: 2px solid #ddd;
 }
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 15px;
 }
+
 nav a {
-  color: white;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.featured ul li {
+  margin-bottom: 12px;
+}
+
+.contact a {
+  color: #2980b9;
   text-decoration: none;
 }
-.hero {
-  background: #eee;
-  padding: 4rem 2rem;
-  text-align: center;
+
+.contact a:hover {
+  text-decoration: underline;
 }
-.cta-button {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-}
-.advantages, .featured, .audiences {
-  padding: 2rem;
-}
-.adv-list, .grid, .drama-list {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-.drama-card {
-  width: 300px;
-}
+
 footer {
-  background: #222;
-  color: #ccc;
   text-align: center;
-  padding: 1rem;
+  padding: 30px 0;
+  font-size: 0.9em;
+  color: #999;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
 }
